@@ -20,5 +20,125 @@ nav ul {
 }
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Barlow", sans-serif;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-inline: 24px;
+  margin-top: 23px;
+}
+.logo {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+/* BUTTON */
+
+.button {
+  padding-inline: 0.9063rem;
+  padding-block: 0.6875rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+.button-primary {
+  background-color: #f16718;
+  color: white;
+}
+.button-secondary {
+  background-color: #e8eff2;
+  color: #162542;
+}
+
+/* CONTAINER */
+
+.container-first {
+  display: flex;
+  flex-direction: column;
+  /* esto es luego para el media query */
+}
+.text-container {
+  margin-inline: 1.5rem;
+  margin-block: 4rem;
+}
+.item {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.component {
+  padding-block: 1.5rem;
+  padding-inline: 1.5rem;
+  text-align: center;
+}
+.section-text {
+  padding-block: 1.5rem;
+  padding-inline: 1.5rem;
+  text-align: center;
+  margin-bottom: 6.9375rem;
+  margin-top: 4.6875rem;
+}
+
+/* TYPOGRAPHY */
+
+.title {
+  font-weight: 900;
+  font-size: 3rem;
+  color: #162542;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+.text {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #7b8bad;
+  line-height: 1.625rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+.text-bold {
+  font-weight: 700;
+  line-height: 1.625rem;
+  margin-bottom: 0;
+}
+.subtitle {
+  font-weight: 900;
+  color: #162542;
+}
+.subtitle-big {
+  font-size: 2rem;
+  line-height: 2.25rem;
+}
+.subtitle-small {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+/* IMAGE */
+
+.image {
+  border-radius: 1.25rem;
+}
+.image-big {
+  margin-left: 1.5rem;
+}
+.image-medium {
+  width: 13.75rem;
+  height: 12.0625rem;
+}
+.image-small {
+  width: 8.0625rem;
+  height: 12.0625rem;
+  border-radius: 0px 20px 20px 0px;
+}
+.image-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin-right: 1.5rem;
+  margin-block: 24px;
 }
