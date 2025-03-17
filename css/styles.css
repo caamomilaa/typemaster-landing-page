@@ -22,16 +22,29 @@ body {
   margin: 0;
   font-family: "Barlow", sans-serif;
 }
+
 .header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  margin-inline: 24px;
-  margin-top: 23px;
+  margin: 1.5rem 1.5rem 4rem 1.5rem;
 }
-.logo {
-  width: 2.5rem;
-  height: 2.5rem;
+@media screen and (width >= 768px) { 
+  .header{
+    margin: 2.5rem 2.5rem 3.875rem 2.5rem;
+  }
+}
+@media screen and (width >= 1400px) {
+  .header{
+    margin: z55px 10.3125rem 5.1875rem 10.3125rem;
+  }
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 3.125rem;
 }
 
 /* BUTTON */
@@ -39,7 +52,7 @@ body {
 .button {
   padding-inline: 0.9063rem;
   padding-block: 0.6875rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.625rem;
@@ -58,7 +71,23 @@ body {
 .container-first {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   /* esto es luego para el media query */
+}
+.container-second{
+  display: flex;
+  flex-direction: column;
+}
+.container-third{
+    padding-inline: 1.5rem;
+}
+@media screen and (width >= 768px) { 
+  .container-first{
+    flex-direction: row;
+    margin-inline: 2.5rem;
+    width: 51.0625rem;
+  }
+
 }
 .text-container {
   margin-inline: 1.5rem;
@@ -70,8 +99,10 @@ body {
   align-items: center;
 }
 .component {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   padding-block: 1.5rem;
-  padding-inline: 1.5rem;
   text-align: center;
 }
 .section-text {
@@ -125,20 +156,55 @@ body {
 }
 .image-big {
   margin-left: 1.5rem;
+
 }
 .image-medium {
   width: 13.75rem;
   height: 12.0625rem;
 }
+@media screen and (width >= 768px) { 
+  .image-medium{
+    width: 27.8125rem;
+    height: 20rem;
+  }
+}
 .image-small {
   width: 8.0625rem;
   height: 12.0625rem;
-  border-radius: 0px 20px 20px 0px;
+  border-radius: 0rem 1.25rem 1.25rem 0rem;
+}
+@media screen and (width >= 768px) { 
+  .image-small{
+    width: 13.375rem;
+    height: 20rem;
+  }
 }
 .image-container {
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
   margin-right: 1.5rem;
-  margin-block: 24px;
+  margin-block: 1.5rem;
+}
+@media screen and (width >= 768px) { 
+  .image-container{
+    width: 13.375rem;
+    height: 20rem;
+  }
+}
+
+/* ICON */
+.icon-container{
+  display: flex;
+  justify-content: center;
+  width: 4.0625rem;
+  height: 4.0625rem;
+  background-color: #f16718;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+.icon{
+  display: block;
+  margin-inline: auto;
+  margin-block: auto;
 }
